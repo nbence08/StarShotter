@@ -1,0 +1,338 @@
+# Blender MTL File: 'untitled.blend'
+# Material Count: 30
+
+newmtl Material.003
+Ns 92.156872
+Ka 1.000000 1.000000 1.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktbrown2.jpg
+
+newmtl None.002
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktmainup.jpg
+
+newmtl ktenginemat.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktengine.jpg
+map_Ke C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktengine.jpg
+
+newmtl ktgreen1mat.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktgreen1.jpg
+map_Ke C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktgreen1.jpg
+
+newmtl ktmainmat.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktmainup.jpg
+
+newmtl ktmainmat_NONE.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl ktmainmat_ktblue.jpg.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktblue.jpg
+
+newmtl ktmainmat_ktbrown1.jpg.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktbrown1.jpg
+
+newmtl ktmainmat_ktbrown2.jpg.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktbrown2.jpg
+
+newmtl ktmainmat_ktbrown3.jpg.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktbrown3.jpg
+
+newmtl ktmainmat_ktbrown4.jpg.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktbrown4.jpg
+
+newmtl ktmainmat_ktgray1.jpg.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktgray1.jpg
+
+newmtl ktmainmat_ktgreen3.jpg.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktgreen3.jpg
+
+newmtl ktmainmat_ktmainup1.jpg.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktmainup1.jpg
+
+newmtl ktmainmat_ktmainup2.jpg.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktmainup2.jpg
+
+newmtl ktmainmat_ktmainup3.jpg.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktmainup3.jpg
+
+newmtl ktmainmat_ktmainup4.jpg.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktmainup4.jpg
+
+newmtl ktmainmat_ktmainup5.jpg.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktmainup5.jpg
+
+newmtl ktmainmat_ktmainup6.jpg.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktmainup6.jpg
+
+newmtl ktmainmat_ktmainup7.jpg.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktmainup7.jpg
+
+newmtl ktmainmat_ktmainup8.jpg.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktmainup8.jpg
+
+newmtl ktmainmat_ktmainup9.jpg.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktmainup9.jpg
+
+newmtl ktmainmat_ktred.jpg.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktred.jpg
+
+newmtl ktmainmat_ktwhite.jpg.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktwhite.jpg
+
+newmtl ktmainmat_ktyellow.jpg.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktyellow.jpg
+
+newmtl ktorangemat.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktorange.jpg
+map_Ke C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktorange.jpg
+
+newmtl ktred1mat.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktred1.jpg
+map_Ke C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktred1.jpg
+
+newmtl ktredmat.001
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktred.jpg
+map_Ke C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktred.jpg
+
+newmtl ktredmat.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktred.jpg
+map_Ke C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktred.jpg
+
+newmtl ktwhitemat.002
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktwhite.jpg
+map_Ke C:\\Users\\nbenc\\StarShotter\\Assets\\source\\Ktinga class\\ktwhite.jpg
