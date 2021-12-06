@@ -93,7 +93,7 @@ public class AIWeaponController : MonoBehaviour
             var ray = new Ray(begin, rayDir);
             RaycastHit hitInfo;
 
-            if (Physics.Raycast(ray, out hitInfo, layerMask, layerMask))
+            if (Physics.Raycast(ray, out hitInfo, layerMask))
             {
 
                 if (hitInfo.rigidbody != null)
