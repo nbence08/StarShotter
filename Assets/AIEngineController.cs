@@ -28,7 +28,7 @@ public class AIEngineController : MonoBehaviour
     private float stopDist;
 
     private float distEpsilon = 1.0f;
-
+    private int layerMask;
     // al the raycasting could be abstracted away into some functions
     void Start()
     {
@@ -56,6 +56,9 @@ public class AIEngineController : MonoBehaviour
         stopDist = 1.0f;
 
         AIHPHandler = GetComponent<HealthHandler>();
+
+        layerMask = int.MaxValue;
+        layerMask -= 1 << 6;
     }
 
     private bool Chasing = false;
@@ -90,33 +93,23 @@ public class AIEngineController : MonoBehaviour
             var end = Target;
             var rayDir = end - begin;
             var ray = new Ray(begin, rayDir);
-            var offset = 1.0f;
-            var breakRayMarching = false;
 
-            if (Physics.Raycast(ray, out hitInfo))
+            if (Physics.Raycast(ray, out hitInfo, layerMask))
             {
-                if (hitInfo.collider.gameObject.Equals(gameObject))
-                {
-                    while (Physics.Raycast(new Ray(begin + rayDir * offset, rayDir), out hitInfo) && !breakRayMarching)
-                    {
-                        begin = begin + rayDir;
-                        offset += 1.0f;
-                        if (!hitInfo.rigidbody.gameObject.Equals(this.gameObject)) breakRayMarching = true;
-                    }
-                }
+
                 if ((hitInfo.point - Target).magnitude < 4.0f) return;
                 else
                 {
                     //actual indirection calculation
                     foreach(var navPoint in NavPointsList)
                     {
-                        var indirectBegin = begin + rayDir * offset;
+                        var indirectBegin = begin + rayDir;
                         var navPos = navPoint.transform.position;
                         var posToNav = new Ray(indirectBegin, navPos - indirectBegin);
                         var navToTarget = new Ray(navPos, Target);
 
                         RaycastHit pos2NavInfo, nav2TargetInfo;
-                        bool pos2NavHit = Physics.Raycast(posToNav, out pos2NavInfo);
+                        bool pos2NavHit = Physics.Raycast(posToNav, out pos2NavInfo, layerMask);
                         bool pos2TargetHit = Physics.Raycast(navToTarget, out nav2TargetInfo);
 
                         if (pos2NavHit)
@@ -158,7 +151,7 @@ public class AIEngineController : MonoBehaviour
 
         Ray ship2Ent = new Ray(transform.position + ship2EntDir*distEpsilon*2.0f, ship2EntDir);
         RaycastHit entHitInfo;
-        bool hit = Physics.Raycast(ship2Ent, out entHitInfo);
+        bool hit = Physics.Raycast(ship2Ent, out entHitInfo, layerMask);
         if (!Escaping && 
             ( !hit ||
             entHitInfo.rigidbody.gameObject.Equals(Ent) ||
@@ -177,7 +170,7 @@ public class AIEngineController : MonoBehaviour
                 var escPtPos = escPt.transform.position;
                 Ray hide2Ent = new Ray(escPtPos, entPos - escPtPos);
                 RaycastHit hitInfo;
-                if (Physics.Raycast(hide2Ent, out hitInfo))
+                if (Physics.Raycast(hide2Ent, out hitInfo, layerMask))
                 {
                     if ((hitInfo.point - escPtPos).magnitude < (entPos - escPtPos).magnitude -5)
                     {

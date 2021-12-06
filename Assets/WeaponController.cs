@@ -17,6 +17,8 @@ public class WeaponController : MonoBehaviour
     private Light lightInstance;
     private HealthHandler klingonLifeHandler;
     private float weaponStrength;
+
+    private int layerMask;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,9 @@ public class WeaponController : MonoBehaviour
 
         klingonLifeHandler = klingonShip.GetComponent<HealthHandler>();
         weaponStrength = SceneTransitionInfo.EntWeaponStrength;
+
+        layerMask = int.MaxValue;
+        layerMask -= 1 << 7;
     }
 
     // Update is called once per frame
@@ -41,7 +46,7 @@ public class WeaponController : MonoBehaviour
             
 
             RaycastHit hitInfo;
-            var hit = UnityEngine.Physics.Raycast(ray, out hitInfo);
+            var hit = Physics.Raycast(ray, out hitInfo, layerMask);
             var start = phaserBank.transform.position;
             Vector3 end;
             if (hit)
@@ -56,7 +61,7 @@ public class WeaponController : MonoBehaviour
             {
                 end = ray.GetPoint(farDist);
                 var secondRay = new Ray(start, end);
-                var secondHit = UnityEngine.Physics.Raycast(secondRay, out hitInfo);
+                var secondHit = UnityEngine.Physics.Raycast(secondRay, out hitInfo, layerMask);
                 if (secondHit)
                 {
                     var obj = hitInfo.collider.gameObject;

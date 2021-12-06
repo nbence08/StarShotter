@@ -31,6 +31,7 @@ public class AIWeaponController : MonoBehaviour
     private float errorSize;
 
     private Vector3 error;
+    public int layerMask;
     void Start()
     {
         disruptorSoundSource = disruptorBank.GetComponent<AudioSource>();
@@ -49,6 +50,8 @@ public class AIWeaponController : MonoBehaviour
         var patrolRouteListSize = Targets.transform.childCount;
         for (var i = 0; i < patrolRouteListSize; i++) TargetsList.Add(Targets.transform.GetChild(i).gameObject);
 
+        layerMask = int.MaxValue;
+        layerMask -= 1 << 6;
     }
 
     // Update is called once per frame
@@ -89,20 +92,10 @@ public class AIWeaponController : MonoBehaviour
             var rayDir = (TargetsList[RandomTarget].transform.position - begin).normalized;
             var ray = new Ray(begin, rayDir);
             RaycastHit hitInfo;
-            if (Physics.Raycast(ray, out hitInfo))
-            {
-                bool breakRayMarching = false;
-                var offset = 1.0f;
-                if (hitInfo.collider.gameObject.Equals(AIShip))
-                {
-                    while(Physics.Raycast(new Ray(begin + rayDir * offset, rayDir), out hitInfo) && !breakRayMarching)
-                    {
-                        begin = begin + rayDir;
-                        offset += 1.0f;
-                        if (!hitInfo.rigidbody.gameObject.Equals(AIShip)) breakRayMarching = true;
-                    }
 
-                }
+            if (Physics.Raycast(ray, out hitInfo, layerMask, layerMask))
+            {
+
                 if (hitInfo.rigidbody != null)
                 {
                     if (!hitInfo.rigidbody.gameObject.Equals(playerShip))
@@ -114,8 +107,8 @@ public class AIWeaponController : MonoBehaviour
                     else
                     {
                         disruptorSoundSource.mute = false;
-                        Ray erroredRay = new Ray(begin + rayDir * offset, (hitInfo.point + error) - (begin + rayDir * offset));
-                        if(Physics.Raycast(erroredRay, out hitInfo))
+                        Ray erroredRay = new Ray(begin + rayDir, (hitInfo.point + error) - (begin + rayDir));
+                        if(Physics.Raycast(erroredRay, out hitInfo, layerMask))
                         {
                             BeamCaster.CastBeam(cylinderInstance, lightInstance, begin, hitInfo.point);
                             if(hitInfo.rigidbody != null)
