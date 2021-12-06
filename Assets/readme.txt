@@ -8,3 +8,5 @@ enterprise:
 https://sketchfab.com/3d-models/uss-enterprise-ncc-1701-d400e528ddd04a2e979459cf11ba08b1
 ktinga:
 https://sketchfab.com/3d-models/ktinga-shift-class-44128c836514440cbbc5d2b77fb58943
+skybox:
+https://assetstore.unity.com/packages/3d/environments/sci-fi/real-stars-skybox-lite-116333
