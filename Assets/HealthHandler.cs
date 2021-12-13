@@ -23,7 +23,7 @@ public class HealthHandler : MonoBehaviour
 
     void Start()
     {
-        if (!AI)
+        //if (!AI)
         {
             MaxHull = Hull;
             MaxShield = Shield;
@@ -34,19 +34,24 @@ public class HealthHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Shield > 0.0f) ShieldEllipsoid.SetActive(true);
+        if (Shield == 0.0f) ShieldEllipsoid.SetActive(false);
+
+        var healthScale = HealthBar.transform.localScale;
+        var shieldScale = ShieldBar.transform.localScale;
+        healthScale.x = DefScaleX * Hull / MaxHull;
+        shieldScale.x = DefScaleX * Shield / MaxShield;
+        HealthBar.transform.localScale = healthScale;
+        ShieldBar.transform.localScale = shieldScale;
     }
 
     public void DoDamage(float damage)
     {
-        if (Shield > 0.0f) ShieldEllipsoid.SetActive(true);
         if (damage >= Shield && Shield > 0.0f)
         {
             Shield = 0.0f;
 
             damage -= damage - Shield;
-
-            ShieldEllipsoid.SetActive(false);
         }
         else if (Shield >= 0 && Shield > 0.0f)
             Shield -= damage;
@@ -66,14 +71,9 @@ public class HealthHandler : MonoBehaviour
         }
         else if ( Shield == 0.0f)
             Hull -= damage;
-        if (!AI)
+        //if (!AI)
         {
-            var healthScale = HealthBar.transform.localScale;
-            var shieldScale = ShieldBar.transform.localScale;
-            healthScale.x = DefScaleX * Hull / MaxHull;
-            shieldScale.x = DefScaleX * Shield / MaxShield;
-            HealthBar.transform.localScale = healthScale;
-            ShieldBar.transform.localScale = shieldScale;
+
         }
     }
 }
